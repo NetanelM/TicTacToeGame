@@ -1,0 +1,13 @@
+<div class="tic-tac-top-game">
+  <div class="row" *ngFor="let cube of metaDataService.cubeGameList">
+    <div *ngFor="let data of cube" class="box box_{{data.position}} " [ngClass]="{'test' : data.winner}"
+         (click)="winnerIs(data)">
+      <img *ngIf="data.toggle" class="img-cube" src="./assets/{{data.img}}.svg">
+    </div>
+  </div>
+</div>
+<div>
+  <img *ngIf="winner !==''" class="img-cube" src="./assets/{{winner}}.svg">
+</div>
+
+<app-popup-wins [toggleActor]="toggleActor"></app-popup-wins>

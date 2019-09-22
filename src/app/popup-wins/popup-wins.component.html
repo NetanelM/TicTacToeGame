@@ -1,0 +1,11 @@
+<div *ngIf="metaDataService.popupToggle" class="full-screen"></div>
+<div *ngIf="metaDataService.popupToggle" class="popup-wins ">
+
+  <div class="winner">The <img class="trophy-img" src="./assets/trophy.svg" alt="the winner is"> is :
+    <span>{{toggleActor === 'o' ? 'x' : 'o'}}</span>
+  </div>
+
+  <div class="play-again" (click)="playAgain()">Play Again <img class="smile-img" src="./assets/smile.svg"></div>
+
+</div>
+

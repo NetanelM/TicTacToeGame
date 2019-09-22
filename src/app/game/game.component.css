@@ -1,0 +1,84 @@
+.tic-tac-top-game {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.row {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.img-cube{
+  width: 98px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box_0 {
+  border-bottom: solid 1px;
+  border-right: solid 1px;
+}
+
+.box_1 {
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+}
+
+.box_2 {
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+}
+
+.box_3 {
+  border-bottom: solid 1px;
+  border-right: solid 1px;
+  border-top: solid 1px;
+}
+
+.box_4 {
+  border: solid 1px;
+}
+
+.box_5 {
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+  border-top: solid 1px;
+}
+
+.box_6 {
+  border-right: solid 1px;
+  border-top: solid 1px;
+}
+
+.box_7 {
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-top: solid 1px;
+}
+
+.box_8 {
+  border-left: solid 1px;
+  border-top: solid 1px;
+}
+
+
+@keyframes example {
+  0%   {background: #ffffff;}
+  25%  {background: red;}
+  50%  {background: #ffffff;}
+  75%  {background: red}
+  100% {background: #ffffff;}
+}
+
+.test {
+  animation-name: example;
+  background:red;
+  animation-duration: 1s;
+}
